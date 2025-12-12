@@ -51,6 +51,12 @@ button:hover {
     background-color: var(--button-hover);
 }
 
+#statusText {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #555555;
+}
+
 @media (max-width: 600px) {
     button {
         width: 80%;

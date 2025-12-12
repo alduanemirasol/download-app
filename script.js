@@ -1,11 +1,14 @@
 const apkURL = "https://www.dropbox.com/scl/fi/s8ecfjn2aa1pjkce0gd3g/SLP.apk?rlkey=65a40qlagvdnzxeyf78qltxbg&st=52k2xs7v&dl=1";
 
 const downloadBtn = document.getElementById("downloadBtn");
+const statusText = document.getElementById("statusText");
 
 function startDownload(url) {
+    statusText.textContent = "Download starting...";
+    
     const link = document.createElement("a");
     link.href = url;
-    link.download = "App.apk";
+    link.download = "SLP-App.apk";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -16,5 +19,9 @@ downloadBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("load", () => {
-    startDownload(apkURL);
+    try {
+        startDownload(apkURL);
+    } catch (e) {
+        statusText.textContent = "Download did not start automatically. Please click the button above.";
+    }
 });
