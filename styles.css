@@ -51,7 +51,7 @@ button:hover {
     background-color: var(--button-hover);
 }
 
-#statusText {
+#downloadMessage {
     margin-top: 15px;
     font-size: 0.95rem;
     color: #555555;
