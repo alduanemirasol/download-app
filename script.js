@@ -5,14 +5,15 @@ const statusText = document.getElementById("statusText");
 
 function startDownload(url) {
     statusText.textContent = "Download starting...";
-    
+    const uniqueURL = url + "?t=" + new Date().getTime();
     const link = document.createElement("a");
-    link.href = url;
+    link.href = uniqueURL;
     link.download = "SLP-App.apk";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
+
 
 downloadBtn.addEventListener("click", () => {
     startDownload(apkURL);
