@@ -14,7 +14,6 @@ function startDownload(url) {
     document.body.removeChild(link);
 }
 
-
 downloadBtn.addEventListener("click", () => {
     startDownload(apkURL);
 });
