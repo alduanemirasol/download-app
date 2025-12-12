@@ -1,4 +1,4 @@
-const apkURL = "https://www.dropbox.com/scl/fi/s8ecfjn2aa1pjkce0gd3g/SLP.apk?rlkey=65a40qlagvdnzxeyf78qltxbg&st=52k2xs7v&dl=1";
+const apkURL = "https://www.dropbox.com/scl/fi/s8ecfjn2aa1pjkce0gd3g/E.M.P.O.W.E.R.apk?rlkey=65a40qlagvdnzxeyf78qltxbg&st=hnkcrwge&dl=1";
 
 const downloadBtn = document.getElementById("downloadBtn");
 const statusText = document.getElementById("statusText");
