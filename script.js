@@ -8,7 +8,7 @@ function startDownload(url) {
     const uniqueURL = url + "?t=" + new Date().getTime();
     const link = document.createElement("a");
     link.href = uniqueURL;
-    link.download = "SLP-App.apk";
+    link.download = "E.M.P.O.W.E.R.apk";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
