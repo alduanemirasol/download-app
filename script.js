@@ -1,5 +1,5 @@
-const apkURL = "https://www.dropbox.com/scl/fi/s8ecfjn2aa1pjkce0gd3g/E.M.P.O.W.E.R.apk?rlkey=65a40qlagvdnzxeyf78qltxbg&st=wowu5t3q&dl=1";
-const AUTO_DOWNLOAD = 1;
+const apkURL = "https://www.dropbox.com/scl/fi/r8f8klsyadlahx7z1ard8/E.M.P.O.W.E.R.apk?rlkey=cv24188xm2i57khrz5rh27vyx&st=n6xgl1yg&dl=1";
+const AUTO_DOWNLOAD = true;
 
 const downloadBtn = document.getElementById("downloadBtn");
 
