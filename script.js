@@ -4,9 +4,8 @@ const AUTO_DOWNLOAD = true;
 const downloadBtn = document.getElementById("downloadBtn");
 
 function startDownload(url) {
-    const uniqueURL = url + "?t=" + new Date().getTime();
     const link = document.createElement("a");
-    link.href = uniqueURL;
+    link.href = url;
     link.download = "E.M.P.O.W.E.R.apk";
     document.body.appendChild(link);
     link.click();
